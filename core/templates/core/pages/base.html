@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    
+    <!-- META -->
+    {% include 'core/components/meta.html' %}
+
+    <title>{% block title %}{% endblock title %} | La Caffettiera</title>
+    
+    <!-- Bootstrap -->
+    {% include 'core/components/header.html' %}
+
+  </head>
+  <body>
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">L'autentico caffè d'italia</span>
+      <span class="site-heading-lower">La Caffettiera</span>
+    </h1>
+    {{ request.path }}
+
+    <!-- Navegación -->
+    {% include 'core/nav/navigation.html' %}
+
+    <!-- Content -->
+    {% block content %}{% endblock content %}
+
+    <!-- Pié de página -->
+    {% include 'core/components/footer.html' %}
+
+    <!-- Bootstrap & Scripts-->
+    {% include 'core/components/scripts.html' %}
+  </body>
+
+</html>
