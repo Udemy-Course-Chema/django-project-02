@@ -13,6 +13,3 @@ def store(request):
 
 def contact(request):
      return render(request, 'core/pages/contact.html')
-
-def blog(request):
-     return render(request, 'core/pages/blog.html')
