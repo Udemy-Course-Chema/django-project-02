@@ -26,10 +26,6 @@
                     {% for category in post.categories.all %}
                       <a href="{% url 'category' category.id %}" class="link"> {{ category.name }} </a>{% if not forloop.last %},{% else %}.{% endif %}
                     {% endfor %}
-                    <!--
-                    <a href="#" class="link">General</a>, 
-                    <a href="#" class="link">Ofertas</a>
-                    -->
                   </em>
                 </span>
               </p>
