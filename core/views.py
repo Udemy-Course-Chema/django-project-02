@@ -11,5 +11,3 @@ def about(request):
 def store(request):
      return render(request, 'core/pages/store.html')
 
-def contact(request):
-     return render(request, 'core/pages/contact.html')

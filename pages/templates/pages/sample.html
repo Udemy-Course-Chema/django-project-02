@@ -14,7 +14,8 @@
               </h2>
               <div class="section-content">
                 <p>
-                  {{ page.content|linebreaks }}
+                  {% comment %} {{ page.content|linebreaks }} {% endcomment %}
+                  {{ page.content|safe }}
                   {% if user.is_authenticated %}
                     <p><a href="{% url 'admin:pages_page_change' page.id %}">Editar</a></p>
                   {% else %}
