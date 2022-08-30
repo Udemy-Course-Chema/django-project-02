@@ -1,4 +1,4 @@
-# DJANGO PROJECT 02
+# DJANGO PROJECT 02: Web Empresarial
 
 A simple django project with Ckeditor for creating pages.
 
